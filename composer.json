@@ -1,0 +1,17 @@
+{
+    "name": "wapp/directory",
+    "description": "wapp directory challenge",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Wapp\\Directory\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cjkook",
+            "email": "cjko.audio@gmail.com"
+        }
+    ],
+    "require": {}
+}
