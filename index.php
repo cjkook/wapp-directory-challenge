@@ -3,7 +3,7 @@ $root = filter_input(INPUT_SERVER, 'DOCUMENT_ROOT');
 // require $root.'/MinerMeisterWeb/User/business/loginTestHeader.php';
 require_once $root.'/wapp-directory-challenge/User/data_access/crypt.php';
 require_once $root.'/wapp-directory-challenge/User/data_access/login.php';
-require_once $root.'/wapp-directory-challenge/view/loginPage.php';
+require_once $root.'/wapp-directory-challenge/components/loginPage.php';
 require_once $root.'/wapp-directory-challenge/view/navbar.php';
 
 // $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
