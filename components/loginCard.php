@@ -26,7 +26,7 @@ $loginCard =
               </form>
             </div>
             <div class="col s3 offset-s9">
-              <a class="waves-effect waves-light btn" type="submit" name="action">Login<i class="material-icons right">send</i></a>
+              <a class="waves-effect waves-light btn" id="submit" type="submit" name="action">Login<i class="material-icons right">send</i></a>
             </div>
             </div>
                 </div>
