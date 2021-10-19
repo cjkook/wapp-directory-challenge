@@ -1,8 +1,16 @@
 <?php
-
-// namespace App\Models;
-
 include("./app/connection.php");
+$params = $_REQUEST;
+$action = isset($params['action']) && $params['action'] != '' ? $params['action'] : 'list';
+$empCls = new User();
+
+switch ($action) {
+  case 'list':
+    $empCls->getUsers();
+    break;
+  default:
+    return;
+}
 
 class User
 {
@@ -18,7 +26,7 @@ class User
 
     function __construct()
     {
-        $db = new dbObj();
+        $db = new db();
         $connString =  $db->getConnstring();
         $this->conn = $connString;
     }

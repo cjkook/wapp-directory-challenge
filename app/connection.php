@@ -1,5 +1,5 @@
 <?php
-Class dbObj{
+Class db{
 	/* Database connection start */
         var $servername, $username, $password, $dbname, $port, $conn;
 

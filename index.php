@@ -14,11 +14,11 @@ require_once $root . '/wapp-directory-challenge/view/directory.php';
 
 require("./app/models/User.php");
 $user = new User();
-$emps = $user->getUsers();
-print_r($emps);
-foreach ($emps as $emp) {
-  print $emp['username'];
-}
+// $emps = $user->getUsers();
+// print_r($emps);
+// foreach ($emps as $emp) {
+//   print $emp['username'];
+// }
 print $pageStart;
 print $directory;
 print $pageEnd;

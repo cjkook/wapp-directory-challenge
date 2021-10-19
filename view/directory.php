@@ -1,19 +1,21 @@
 <?php
 $directory = '<section>
 
-<table id="employee_grid" class="table" width="100%" cellspacing="0">
+<table id="directory" class="table striped" width="100%" cellspacing="0">
 	<thead>
 		<tr>
       <th>ID</th>
 			<th>Name</th>
+			<th>Username</th>
 			<th>Email</th>
 			<th>Email Notices</th>
+			<th>Password</th>
 			<th>Roles</th>
       <th>Details</th>
       <th>Date Created</th>
 		</tr>
 	</thead>
-	<tbody id="emp_body">
+	<tbody id="directory_body">
 	</tbody>
 </table>
 
