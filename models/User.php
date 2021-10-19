@@ -1,5 +1,5 @@
 <?php
-include("./app/connection.php");
+include_once("connection.php");
 $params = $_REQUEST;
 $action = isset($params['action']) && $params['action'] != '' ? $params['action'] : 'list';
 $empCls = new User();
@@ -14,6 +14,7 @@ switch ($action) {
 
 class User
 {
+    protected $conn;
     protected $user_id;
     protected $username;
     protected $password;
@@ -23,6 +24,7 @@ class User
     protected $roles;
     protected $userDetails;
     protected $createDateTime;
+    protected $data = array();
 
     function __construct()
     {
@@ -37,7 +39,7 @@ class User
         $sql = "SELECT * FROM users";
         $queryRecords = pg_query($this->conn, $sql) or die("error to fetch employees data");
         $data = pg_fetch_all($queryRecords);
-        return $data;
+        echo json_encode($data);
     }
     public function login(string $username, string $password)
     {
