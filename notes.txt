@@ -1,0 +1,11 @@
+// print $pageStart;
+// echo $lg->seedData();
+
+
+// echo hash('ripemd160', 'The quick brown fox jumped over the lazy dog.');
+// echo 'test';
+
+
+// $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+$lg = new login();
