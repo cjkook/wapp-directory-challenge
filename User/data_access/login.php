@@ -16,10 +16,10 @@ class login
     $this->log = $log;
 
     //Begin a database session:
-    // $this->conn = new PDO('pgsql:host=localhost;dbname=user_info', 'postgres', '1437');
+    $this->conn = new PDO('pgsql:host=localhost;dbname=user_info', 'postgres', '1437');
 
     // connect w/o PDO
-    $this->conn = pg_connect("host=localhost dbname=user_info user=postgres password=1437");
+    // $this->conn = pg_connect("host=localhost dbname=user_info user=postgres password=1437");
   }
 
 

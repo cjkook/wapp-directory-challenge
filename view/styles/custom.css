@@ -8,9 +8,9 @@ nav {
 
 .container {
   width: 80%;
+  /* align-items: center; */
 }
 
-.container-card {
-  width: 40%;
-  margin: 0 auto;
+.row {
+  margin-bottom: -40px;
 }

@@ -1,8 +1,9 @@
 <?php
 Class db{
 	/* Database connection start */
-        var $servername, $username, $password, $dbname, $port, $conn;
+        public $servername, $username, $password, $dbname, $port, $conn;
 
+	
 	function __Construct()
 	{
 	  $this->servername = "localhost";

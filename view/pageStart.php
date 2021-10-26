@@ -1,5 +1,5 @@
 <?php
-require_once $root.'/wapp-directory-challenge/components/navbar.php';
+require_once $root.'/wapp-directory-challenge/presentation/navbar.php';
 $pageStart = '<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,10 +14,13 @@ $pageStart = '<!DOCTYPE html>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+<script type="text/javascript" src="view/ajaxFunctions.js"></script>
 <script type="text/javascript" src="view/common.js"></script>
+<script type="text/javascript" src="view/createForms.js"></script>
+
 
 </head>
-<body>'.$navbar.'';
+<body>'.$navbar;
 
 
 
